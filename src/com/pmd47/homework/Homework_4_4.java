@@ -1,4 +1,5 @@
 package com.pmd47.homework;
+import java.util.Scanner;
 
 public class Homework_4_4 {
     public static void main(String[] args) {
@@ -40,11 +41,17 @@ public class Homework_4_4 {
             n--;
         }while(n >= 1);
         //2
-        // n = 20;
-        // do {
-        //     System.out.println(n);
-        //     n--;
-        // }while(n >= 1);
+        boolean check = true;
+
+        do {
+            Scanner input = new Scanner(System.in);
+            int number = input.nextInt();
+            if(number%2 != 0){
+                System.out.println("Stop");
+                check = false;
+            } 
+            System.out.println("You entered " + number);
+        }while(check);
 
         //Lab8
 
