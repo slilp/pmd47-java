@@ -1,0 +1,2 @@
+module Pmd47JavaHomework {
+}
